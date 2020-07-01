@@ -1,8 +1,10 @@
 node{
   stage('SCM Checkout'){
-     git 'https://github.com/Newenv01/master'
+     echo "Testing"
   }
   stage('Compile-Package'){
-     sh 'nvn clean package'
+     mkdir testdir
+     cd testdir
+     touch new_file.txt
   }
 }
