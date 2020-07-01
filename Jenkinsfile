@@ -3,6 +3,6 @@ node{
      echo "Testing"
   }
   stage('Compile-Package'){
-     mkdir testdir
+     echo "testdir"
      }
 }
