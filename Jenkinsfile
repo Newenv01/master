@@ -4,7 +4,5 @@ node{
   }
   stage('Compile-Package'){
      mkdir testdir
-     cd testdir
-     touch new_file.txt
-  }
+     }
 }
