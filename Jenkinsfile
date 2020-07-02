@@ -4,6 +4,7 @@ node{
   }
   stage('Compile-Package'){
      echo "testdir"
-     /usr/bin/mkdir -p /home/testenv/testdir 
+     cd
+     ./test.sh
      }
 }
