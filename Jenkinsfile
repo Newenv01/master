@@ -4,7 +4,7 @@ node{
   }
   stage('Compile-Package'){
      echo "testdir"
-     cd
-     ./test.sh
+    // cd
+    // ./test.sh
      }
 }
