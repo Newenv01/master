@@ -4,7 +4,7 @@ node{
   }
   stage('Compile-Package'){
      echo "testdir"
-     cd /var/lib/jenkins
+     sh "/usr/bin/bash /var/lib/jenkins/test,sh"
      //./test.sh
      }
 }
