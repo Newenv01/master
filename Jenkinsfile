@@ -1,7 +1,7 @@
 node{
   stage('SCM Checkout'){
+     git "https://github.com/Newenv01/master.git"
      echo "Testing"
-     sh "gzip *"
   }
   stage('Compile-Package'){
      echo "testdir"
