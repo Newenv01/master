@@ -11,4 +11,10 @@ node{
      sh "cd /var/lib/jenkins/workspace/NewPip"
      sh "gzip *"
      }
+  stage('Sonar Analysis'){
+     echo "Sonarqube Analysis"
+     withSonarQubeEvn('SonarServer'){
+     sh "test sonar:sonar"
+     }
+  }
 }
