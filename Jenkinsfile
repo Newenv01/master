@@ -6,10 +6,10 @@ node{
   }
   stage('Compile-Package'){
      echo "testdir"
-     sh "/usr/bin/bash /var/lib/jenkins/test.sh"
+     //sh "/usr/bin/bash /var/lib/jenkins/test.sh"
      //./test.sh
      sh "cd /var/lib/jenkins/workspace/NewPip"
-     sh "gzip *"
+     // sh "gzip *"
      }
    stage('Build'){
      echo "About to set variable"
