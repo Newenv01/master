@@ -11,10 +11,16 @@ node{
      sh "cd /var/lib/jenkins/workspace/NewPip"
      sh "gzip *"
      }
+   stage('Build'){
+     echo "About to set variable"
+     def mvnHome = tool name: 'maven-1', type: 'maven'
+     sh "${mvnHome}/bin/mvn package"
+     }
+
   stage('Sonar Analysis'){
      echo "Sonarqube Analysis"
      withSonarQubeEvn('SonarServer'){
-     sh "test sonar:sonar"
+     sh "${mvnHome}/bin/mvn sonar:sonar"
      }
   }
 }
